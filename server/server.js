@@ -109,7 +109,7 @@ app.get("/insertdata", function (req, res) {
 
 
   mongodb.MongoClient.connect(serverConfig.mongoURL, function (err, client) {
-    let db = client.db('accesslist')
+    let db = client.db('cmb-studio')
     let songs = db.collection('userlist');
     songs.insert(seedData, function (err, result) {});
   });
