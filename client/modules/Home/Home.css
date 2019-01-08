@@ -1,0 +1,67 @@
+/* Home styles */
+
+.font-decor {
+    font-family: AvenierNext;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.home-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.home-header {
+    text-shadow: 0px 0px 10px #000;
+    position: relative;
+    bottom: 64px;
+    color: #fff;
+    margin: auto;
+}
+
+.home-header h1 {
+    transform-origin: 0% 0%;
+    transform: translateX(80%);
+}
+
+.welcome-copy {
+    margin-left: 80px;
+    margin-right: 80px;
+    text-decoration-line: underline;
+}
+
+.self-copy {
+    position: absolute;
+    bottom: 28px;
+    left: 165px;
+}
+
+.item {
+    color: white;
+    float: left;
+    max-width: 185px;
+    margin-right: 50px;
+}
+
+.item h3 {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 0;
+    letter-spacing: 2px;
+}
+
+.item p {
+    text-shadow: 0px 0px 10px #000;
+    line-height: 14px;
+    font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+    .self-copy {
+        left: 90px;
+    }
+    .home-header h1 {
+        transform: translateX(50%);
+    }
+}
