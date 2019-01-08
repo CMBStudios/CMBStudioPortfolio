@@ -195,7 +195,7 @@
 	  value: true
 	});
 	var config = {
-	  mongoURL: process.env.MONGO_URL || 'mongodb://localhost:27017/hugo-exp',
+	  mongoURL: process.env.MONGO_URL || 'mongodb://localhost:27017/cmb-studio',
 	  port: process.env.PORT || 8000
 	};
 
@@ -3270,7 +3270,7 @@
 
 	function prepareEmail(newContact) {
 	  return {
-	    from: '<no-reply@hugocodes.com>', // sender address
+	    from: '<no-reply@cmbcodes.com>', // sender address
 	    to: 'cmb.studio2018@gmail.com', // list of receivers
 	    subject: 'CMB Studio: ' + newContact.name + ' Wants To Connect', // Subject line
 	    html: '\n      <div>\n        <h1>Contact Info</h1> <br />\n        <h3>Name: ' + newContact.name + '</h3>\n        <h3>Phone: ' + newContact.phone + '</h3>\n        <h3>Email: ' + newContact.email + '</h3> <br />\n        <h3>Inquiry: </h3>\n        <p>' + newContact.inquiry + '</p\n      </div>\n    '
@@ -3278,7 +3278,7 @@
 	}
 
 	function send(mailOptions, cb) {
-	  var transporter = _nodemailer2.default.createTransport('smtps://hugoce17%40gmail.com:ymaazbrgztbmldlt@smtp.gmail.com');
+	  var transporter = _nodemailer2.default.createTransport('smtps://cmb.studio20187%40gmail.com:ymaazbrgztbmldlt@smtp.gmail.com');
 	  transporter.sendMail(mailOptions, function (error, info) {
 	    if (error) {
 	      return cb(error);

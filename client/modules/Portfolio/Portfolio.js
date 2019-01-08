@@ -27,7 +27,7 @@ const data = [{
 }, {
   cardImagePath: CMBStudioImage,
   title: 'CMBStudio',
-  link: 'https://hugo-exp.herokuapp.com/',
+  link: 'https://cmbstudioportfolio.herokuapp.com/',
 }, {
   cardImagePath: mernBlogImage,
   title: 'Mern Blog',

@@ -6,7 +6,7 @@ import slug from 'limax';
 
 function prepareEmail(newContact) {
   return {
-    from: '<no-reply@hugocodes.com>', // sender address
+    from: '<no-reply@cmbstudiocodes.com>', // sender address
     to: 'cmb.studio2018@gmail.com', // list of receivers
     subject: `CMB Studio: ${newContact.name} Wants To Connect`, // Subject line
     html: `
@@ -23,7 +23,7 @@ function prepareEmail(newContact) {
 }
 
 function send(mailOptions, cb) {
-  const transporter = nodemailer.createTransport('smtps://hugoce17%40gmail.com:ymaazbrgztbmldlt@smtp.gmail.com');
+  const transporter = nodemailer.createTransport('smtps://cmb.studio2018%40gmail.com:ymaazbrgztbmldlt@smtp.gmail.com');
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
       return cb(error);

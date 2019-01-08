@@ -5,7 +5,7 @@ const router = new Router();
 
 /**
  * Example endpoint
- * /api/analyzed/?name=hugoce17&limit=20
+ * /api/analyzed/?name=cmb.studio2018&limit=20
  */
 router.route('/analyzed').get(AnalyzedController.getAnalyzedData);
 
