@@ -1120,9 +1120,9 @@
 
 	var _asurety2 = _interopRequireDefault(_asurety);
 
-	var _hugoExp = '/' + "0b00eb043a5448467c4a17f501f0925c.png";
+	var _CMBStudio = '/' + "0b00eb043a5448467c4a17f501f0925c.png";
 
-	var _hugoExp2 = _interopRequireDefault(_hugoExp);
+	var _CMBStudio2 = _interopRequireDefault(_CMBStudio);
 
 	var _mernBlog = '/' + "ebd3d53c0a9e919f5ff872991a04dbca.png";
 
@@ -1226,9 +1226,9 @@
 	  title: 'Asurety',
 	  link: 'https://asurety.herokuapp.com/'
 	}, {
-	  cardImagePath: _hugoExp2.default,
-	  title: 'HugoExp',
-	  link: 'https://hugo-exp.herokuapp.com/'
+	  cardImagePath: _CMBStudio2.default,
+	  title: 'CMB Studio',
+	  link: 'https://cmbstudioportfolio.herokuapp.com/'
 	}, {
 	  cardImagePath: _mernBlog2.default,
 	  title: 'Mern Blog',
@@ -2442,7 +2442,7 @@
 	      }), _jsx(_Navigation2.default, {
 	        open: this.state.drawerOpen,
 	        width: this.state.drawerWidth,
-	        title: 'HugoExp'
+	        title: 'CMB Studio'
 	      }), _jsx(_PortfolioVideo2.default, {
 	        marginLeft: this.state.videoMarginLeft,
 	        srcPath: _ferryRide2.default
@@ -2781,7 +2781,7 @@
 	    className: _Navigation2.default.menu
 	  }, void 0, createDrawerMenu())) : _jsx(_AppBar2.default, {
 	    className: ' ' + _Navigation2.default.appbar + ' ' + _animate2.default.animated + ' ' + _animate2.default.fadeInDown,
-	    title: 'HugoExp',
+	    title: 'CMB Studio',
 	    titleStyle: muiStyle.appBarTitle,
 	    iconElementLeft: _jsx(_IconMenu2.default, {
 	      menuStyle: { height: '100%' },
@@ -3271,8 +3271,8 @@
 	function prepareEmail(newContact) {
 	  return {
 	    from: '<no-reply@hugocodes.com>', // sender address
-	    to: 'hugoce17@gmail.com', // list of receivers
-	    subject: 'HugoEXP: ' + newContact.name + ' Wants To Connect', // Subject line
+	    to: 'cmb.studio2018@gmail.com', // list of receivers
+	    subject: 'CMB Studio: ' + newContact.name + ' Wants To Connect', // Subject line
 	    html: '\n      <div>\n        <h1>Contact Info</h1> <br />\n        <h3>Name: ' + newContact.name + '</h3>\n        <h3>Phone: ' + newContact.phone + '</h3>\n        <h3>Email: ' + newContact.email + '</h3> <br />\n        <h3>Inquiry: </h3>\n        <p>' + newContact.inquiry + '</p\n      </div>\n    '
 	  };
 	}

@@ -7,8 +7,8 @@ import slug from 'limax';
 function prepareEmail(newContact) {
   return {
     from: '<no-reply@hugocodes.com>', // sender address
-    to: 'hugoce17@gmail.com', // list of receivers
-    subject: `HugoEXP: ${newContact.name} Wants To Connect`, // Subject line
+    to: 'cmb.studio2018@gmail.com', // list of receivers
+    subject: `CMB Studio: ${newContact.name} Wants To Connect`, // Subject line
     html: `
       <div>
         <h1>Contact Info</h1> <br />
