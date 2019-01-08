@@ -8,7 +8,7 @@
     "cover": "nyc npm run test",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "start:watch": "cross-env BABEL_DISABLE_CACHE=1 NODE_ENV=development nodemon index.js",
-    "start": "cross-env NODE_ENV=production MONGO_URL=mongodb://heroku_q10fhr10:ncom1rrq4rbqigmmrurjdmq80q@ds133158.mlab.com:33158/heroku_q10fhr10 node index.js",
+    "start": "cross-env NODE_ENV=production MONGO_URL=mongodb://cmb:portfolio2019@ds117759.mlab.com:17759/cmb-studio node index.js",
     "start:prod": "cross-env NODE_ENV=production node index.js",
     "bs": "BABEL_DISABLE_CACHE=1 npm run clean && npm run build && npm run build:server && npm run start:prod",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
@@ -23,12 +23,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hashnode/mern-starter.git"
+    "url": "git+https://github.com/CMBStudioProgram/CMBStudioPortfolio.git"
   },
   "bugs": {
-    "url": "https://github.com/Hashnode/mern-starter/issues"
+    "url": "https://github.com/CMBStudioProgram/CMBStudioPortfolio/issues"
   },
-  "homepage": "https://github.com/Hashnode/mern-starter#readme",
+  "homepage": "https://github.com/CMBStudioProgram/CMBStudioPortfolio#readme",
   "author": "Prashant Abhishek <prashant.abhishek7g@gmail.com>, Mayank Chandola <imayankchd@gmail.com>, Sandeep Panda <sandeep@hashnode.com>, Syed Fazle Rahman <fazle@hashnode.com>, Alkshendra Maurya <alkshendra@hashnode.com>",
   "license": "MIT",
   "dependencies": {
