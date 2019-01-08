@@ -79,7 +79,7 @@ export class App extends Component {
           {this.state.isMounted && !window.devToolsExtension && process.env.NODE_ENV === 'development' && <DevTools />}
           <div>
             <Helmet
-              title="Hugo Experience"
+              title="CMB Studio's Portfolio"
               titleTemplate="%s"
               meta={[
                 { charset: 'utf-8' },
@@ -96,7 +96,7 @@ export class App extends Component {
             <Navigation
               open={this.state.drawerOpen}
               width={this.state.drawerWidth}
-              title="HugoExp"
+              title="CMB Studio's Portfolio"
             />
             <PortfolioVideo marginLeft={this.state.videoMarginLeft} srcPath={ferryRide} />
 

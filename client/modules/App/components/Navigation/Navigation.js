@@ -118,7 +118,7 @@ const Navigation = (props) => {
           :
           <AppBar
             className={` ${style.appbar} ${an.animated} ${an.fadeInDown}`}
-            title="HugoExp"
+            title="CMB Studio's Portfolio"
             titleStyle={muiStyle.appBarTitle}
             iconElementLeft={
               <IconMenu
