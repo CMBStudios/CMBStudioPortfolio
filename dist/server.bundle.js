@@ -2430,7 +2430,7 @@
 	      return _jsx(_MuiThemeProvider2.default, {
 	        muiTheme: muiTheme
 	      }, void 0, _jsx('div', {}, void 0, this.state.isMounted && !window.devToolsExtension && process.env.NODE_ENV === 'development' && _ref, _jsx('div', {}, void 0, _jsx(_reactHelmet2.default, {
-	        title: 'Hugo Experience',
+	        title: 'CMB Studio\'s Portfolio',
 	        titleTemplate: '%s',
 	        meta: [{ charset: 'utf-8' }, {
 	          'http-equiv': 'X-UA-Compatible',
