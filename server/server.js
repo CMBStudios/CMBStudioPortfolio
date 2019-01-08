@@ -55,6 +55,68 @@ mongoose.connect(serverConfig.mongoURL, (error) => {
   }
 });
 
+
+
+function getDateTime() {
+
+  var date = new Date();
+
+  var hour = date.getHours();
+  hour = (hour < 10 ? "0" : "") + hour;
+
+  var min = date.getMinutes();
+  min = (min < 10 ? "0" : "") + min;
+
+  var sec = date.getSeconds();
+  sec = (sec < 10 ? "0" : "") + sec;
+
+  var year = date.getFullYear();
+
+  var month = date.getMonth() + 1;
+  month = (month < 10 ? "0" : "") + month;
+
+  var day = date.getDate();
+  day = (day < 10 ? "0" : "") + day;
+
+  return year + ":" + month + ":" + day + ":" + hour + ":" + min + ":" + sec;
+
+}
+
+// Define any API routes before this runs
+app.get("/getdata", function (req, res) {
+  mongodb.MongoClient.connect(serverConfig.mongoURL,{useNewUrlParser: true}, function (err, client) {
+    let db = client.db('accesslist')
+    let songs = db.collection('userlist');
+    songs.find({}).toArray(function (err, result) {
+      if (err) throw err;
+      res.send(result);
+      client.close();
+    });
+  });
+});
+
+app.get("/insertdata", function (req, res) {
+
+  var ip = require("ip");
+  console.dir("connect from " + ip.address());
+  let seedData = [
+    {
+      app_name: "CMBStudioPortfolio",
+      ip: ip.address(),
+      time: getDateTime()
+    }
+  ];
+
+
+  mongodb.MongoClient.connect(serverConfig.mongoURL, function (err, client) {
+    let db = client.db('accesslist')
+    let songs = db.collection('userlist');
+    songs.insert(seedData, function (err, result) {});
+  });
+});
+
+
+
 // Allow cors
 app.use(cors());
 
