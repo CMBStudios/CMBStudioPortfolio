@@ -9,7 +9,7 @@ web:
    - .:/usr/src/app/
   environment:
    NODE_ENV: development 
-   MONGO_URL: mongodb://db:27017/cmb-studio
+   MONGO_URL: mongodb://cmb:portfolio2019@ds117759.mlab.com:17759/cmb-studio
 db:
   image: mongo:latest
   volumes:
